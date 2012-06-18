@@ -95,8 +95,6 @@ alias start_redis='redis-server /usr/local/etc/redis.conf'
 # git
 alias gl='git pull'
 alias gp='git push'
-alias gpom='git push origin master'
-alias glom='git pull origin master'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
@@ -105,6 +103,9 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gs='git status'
 alias gitx='open -a /Applications/GitX.app .'
+alias gpom='git push origin master'
+alias glom='git pull origin master'
+alias grpo='git remote prune origin'
 
 # rails
 alias integrate="unset_perf_vars; rvm use ruby-1.9.3-p125@myfinance --create; bundle; RAILS_ENV=test time rake integrate; rvm use ruby-1.9.3-p125-perf@myfinance --create; bundle; set_perf_vars; say 'integration finished'"
