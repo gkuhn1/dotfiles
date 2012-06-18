@@ -9,6 +9,7 @@ set mark-symlinked-directories on
 
 # Use the text that has already been typed as the prefix for searching through
 # commands (i.e. more intelligent Up/Down behavior)
+# allow you to start typing a command and use the up/down arrow to auto complete from commands in your history
 "\e[B": history-search-forward
 "\e[A": history-search-backward
 

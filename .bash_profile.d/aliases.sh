@@ -107,8 +107,9 @@ alias gs='git status'
 alias gitx='open -a /Applications/GitX.app .'
 
 # rails
-alias integrate='RAILS_ENV=test rake integrate'
+alias integrate="unset_perf_vars; rvm use ruby-1.9.3-p125@myfinance --create; bundle; RAILS_ENV=test time rake integrate; rvm use ruby-1.9.3-p125-perf@myfinance --create; bundle; set_perf_vars; say 'integration finished'"
 alias tlog='tail -f log/development.log'
+alias bex="bundle exec"
 alias rs='script/rails server'
 alias rc='script/rails console'
 alias rg='script/rails generate'
