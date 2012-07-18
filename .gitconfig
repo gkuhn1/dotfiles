@@ -21,7 +21,16 @@
   autosetupmerge = true
 [core]
   editor = subl -w
+  autocrlf = input
+  safecrlf = true
 [push]
   default = current
 [alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  type = cat-file -t
+  dump = cat-file -p
