@@ -88,8 +88,8 @@ alias start_postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgr
 alias stop_postgres='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias start_mongodb='mongod run --config /usr/local/etc/mongod.conf'
 alias start_memcached='/usr/local/bin/memcached'
-alias start_mysql='mysql.server start'
-alias stop_mysql='mysql.server stop'
+alias start_mysql='sudo lampp startmysql'
+alias stop_mysql='sudo lampp stopmysql'
 alias start_redis='redis-server /usr/local/etc/redis.conf'
 
 # git
@@ -103,6 +103,7 @@ alias go='git checkout '
 alias gco='git checkout'
 alias gb='git branch'
 alias gba='git branch -a'
+alias gfa='git fetch -p'
 alias gs='git status'
 alias gx='gitx --all'
 alias gitx='open -a /Applications/GitX.app .'

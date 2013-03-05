@@ -1,4 +1,4 @@
-source $HOME/.bash_profile.d/completion/bash.sh
+# source $HOME/.bash_profile.d/completion/bash.sh
 source $HOME/.bash_profile.d/completion/git.sh
 source $HOME/.bash_profile.d/completion/gem.sh
 source $HOME/.bash_profile.d/completion/ssh.sh
