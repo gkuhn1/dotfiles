@@ -20,7 +20,7 @@
 [branch]
   autosetupmerge = true
 [core]
-  editor = subl -w
+  editor = vim
   autocrlf = input
   safecrlf = true
 [push]
