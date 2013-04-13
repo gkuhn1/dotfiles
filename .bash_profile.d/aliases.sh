@@ -84,6 +84,7 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias qlf='qlmanage -p "$@" >& /dev/null'
 
 # servers (homebrew)
+alias start_aws='source ~/.AWS/contabil/users/g.kuhn0@gmail.com/profile.sh'
 alias start_postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop_postgres='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias start_mongodb='mongod run --config /usr/local/etc/mongod.conf'

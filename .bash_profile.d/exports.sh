@@ -7,8 +7,8 @@ export CC=gcc-4.2
 export PATH=/usr/local/bin:$PATH
 
 # Make Sublime Text 2 the default editor
-export EDITOR="subl -w"
-export SVN_EDITOR="subl -w"
+export EDITOR="vim"
+export SVN_EDITOR="vim"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
