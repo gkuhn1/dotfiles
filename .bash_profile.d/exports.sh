@@ -33,6 +33,11 @@ export GREP_COLOR="4;33"
 
 export JAVA_HOME="/Library/Java/Home"
 
+# adjusts RUBY settings
+export RUBY_GC_MALLOC_LIMIT=104857600
+export RUBY_HEAP_FREE_MIN=200000
+export RUBY_HEAP_MIN_SLOTS=40000
+
 export BLUE="\[\033[0;34m\]"
 export NO_COLOR="\[\e[0m\]"
 export GRAY="\[\033[1;30m\]"
