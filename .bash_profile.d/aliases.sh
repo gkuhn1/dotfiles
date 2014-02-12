@@ -92,6 +92,7 @@ alias start_memcached='/usr/local/bin/memcached'
 alias start_mysql='sudo lampp startmysql'
 alias stop_mysql='sudo lampp stopmysql'
 alias start_redis='redis-server /usr/local/etc/redis.conf'
+alias ccde='cd /rails/ccdeaws && rvm use ruby-1.9.3-p327@rnf'
 
 # git
 alias gl='git pull'
