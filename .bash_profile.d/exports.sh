@@ -6,7 +6,7 @@ export CC=gcc-4.2
 #  http://od-eon.com/blogs/calvin/os-x-lion-postgresql/
 export PATH=/usr/local/bin:$PATH
 
-# Make Sublime Text 2 the default editor
+# Make vim the default editor
 export EDITOR="vim"
 export SVN_EDITOR="vim"
 

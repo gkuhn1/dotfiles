@@ -92,7 +92,6 @@ alias start_memcached='/usr/local/bin/memcached'
 alias start_mysql='sudo lampp startmysql'
 alias stop_mysql='sudo lampp stopmysql'
 alias start_redis='redis-server /usr/local/etc/redis.conf'
-alias ccde='cd /rails/ccdeaws && rvm use ruby-1.9.3-p327@rnf'
 
 # git
 alias gl='git pull'
@@ -107,8 +106,6 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gfa='git fetch -p'
 alias gs='git status'
-alias gx='gitx --all'
-alias gitx='open -a /Applications/GitX.app .'
 alias gpom='git push origin master'
 alias glom='git pull origin master'
 alias grpo='git remote prune origin'
@@ -116,13 +113,12 @@ alias got='git '
 alias get='git '
 
 # rails
-alias integrate="unset_perf_vars; rvm use ruby-1.9.3-p125@myfinance --create; bundle; RAILS_ENV=test time rake integrate; rvm use ruby-1.9.3-p125-perf@myfinance --create; bundle; set_perf_vars; say 'integration finished'"
 alias tlog='tail -f log/development.log'
 alias bex="bundle exec"
-alias rs='script/rails server'
-alias rc='script/rails console'
-alias rg='script/rails generate'
+alias rs='rails server thin'
+alias rc='NOROUTES=True rails console'
+alias rg='NOROUTES=True rails generate'
 alias fs='foreman start -f Procfile.development'
+alias cov='COVERAGE=true rake spec'
 
-alias growl="growlnotify"
 alias psgrep="ps aux | egrep -v egrep | egrep"

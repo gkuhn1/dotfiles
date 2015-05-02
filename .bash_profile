@@ -16,3 +16,9 @@ source $HOME/.bash_profile.d/settings.sh
 export PATH=$PATH:$HOME/.rvm/bin
 
 export PATH="$HOME/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+## Enable direnv https://github.com/zimbatm/direnv
+eval "$(direnv hook bash)"
