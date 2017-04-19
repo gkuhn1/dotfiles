@@ -6,6 +6,8 @@ alias -- -="cd -"
 alias vv='cd ..; cd -'
 
 # Shortcuts
+alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias d="cd ~/Dropbox"
 alias p="cd ~/projetos"
 alias g="git"

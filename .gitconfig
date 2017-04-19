@@ -34,6 +34,8 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   type = cat-file -t
   dump = cat-file -p
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
 [user]
 	email = g.kuhn0@gmail.com
 	name = Guilherme Kuhn

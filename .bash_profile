@@ -15,10 +15,13 @@ source $HOME/.bash_profile.d/settings.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH=$PATH:$HOME/.rvm/bin
 
+# This loads Kiex Erlang version manager
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
 export PATH="$HOME/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-## Enable direnv https://github.com/zimbatm/direnv
-eval "$(direnv hook bash)"
+export NVM_DIR="$HOME/.nvm"
+test -s "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"
