@@ -12,8 +12,8 @@ source $HOME/.bash_profile.d/settings.sh
 [ -r $HOME/.bash_profile_extras ] && source $HOME/.bash_profile_extras
 
 # This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH=$PATH:$HOME/.rvm/bin
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# export PATH=$PATH:$HOME/.rvm/bin
 
 # This loads Kiex Erlang version manager
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
@@ -23,5 +23,5 @@ export PATH="$HOME/bin:$PATH"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-test -s "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# test -s "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"

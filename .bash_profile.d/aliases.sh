@@ -113,6 +113,8 @@ alias glom='git pull origin master'
 alias grpo='git remote prune origin'
 alias got='git '
 alias get='git '
+# Cleans all local branches except master and the current branch
+alias gbDA='git branch | egrep -v "(master|\*)" | xargs git branch -D'
 
 # rails
 alias tlog='tail -f log/development.log'

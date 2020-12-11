@@ -1,5 +1,5 @@
 # compilador para rvm
-export CC=gcc-4.2
+# export CC=gcc-4.2
 
 # bug postgres + lion, ver:
 #  http://joneslee85.wordpress.com/2011/10/27/fix-postgres-permission-denied-issue-on-osx-lion/
@@ -22,11 +22,12 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[00;32m'
 
 # Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
-export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL=ignoredups
+# MOVED TO prompt.sh
+# export HISTSIZE=32768
+# export HISTFILESIZE=$HISTSIZE
+# export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+# export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
